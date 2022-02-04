@@ -1,4 +1,4 @@
-// <copyright file="McodeTemplate.js" company="MicroCODE Incorporated">Copyright © 2022 MicroCODE Incorporated Troy, MI</copyright><author>Timothy J. McGuire</author>
+// <copyright file="mcodeTemplate.js" company="MicroCODE Incorporated">Copyright © 2022 MicroCODE Incorporated Troy, MI</copyright><author>Timothy J. McGuire</author>
 
 /*
  *      Title:    MicroCODE Common JavaScript Class Template
@@ -137,7 +137,7 @@ class McodeTemplate
      * static1() – description of public static method, called by prototype not object.
      *             This does not operate on a specific copy of a Class object.
      *
-     * @param1 {type} description of param1.
+     * @param {type} param1 description of param1.
      * @returns {type} description of return value.
      * @api public
      */
@@ -152,8 +152,8 @@ class McodeTemplate
     /**
      * method1() – description of public method.
      *
-     * @param1 {type} description of param1.
-     * @returns {type} description of return value.
+     * @param {type} param1 1st method parameter.
+     * @returns method result.
      * @api public
      */
     method1(param1)
@@ -166,9 +166,9 @@ class McodeTemplate
     /**
      * method2() – description of public method.
      *
-     * @param1 {type} description of param1.
-     * @param2 {type} description of param2.
-     * @returns {type} description of return value.
+     * @param {type} param1 1st method parameter.
+     * @param {type} param2 2nd method parameter.
+     * @returns method result.
      * @api public
      */
     method2(param1, param2)
@@ -179,12 +179,12 @@ class McodeTemplate
     }
 
     /**
-     * method3() – description of public method.
+     * method2() – description of public method.
      *
-     * @param1 {type} description of param1.
-     * @param2 {type} description of param2.
-     * @param3 {type} description of param3.
-     * @returns {type} description of return value.
+     * @param {type} param1 1st method parameter.
+     * @param {type} param2 2nd method parameter.
+     * @param {type} param3 3rd method parameter.
+     * @returns method result.
      * @api public
      */
     method3(param1, param2, param3)
@@ -211,7 +211,15 @@ class McodeTemplate
     /**
      * _method1() – description of private method.
      *
-     * @param1 {type} description of param1.
+     * @param {type} param1 description of param1.
+     * @returns {type} description of return value.
+     * @api private
+     */
+
+    /**
+     * _method1() – description of private method.
+     *
+     * @param {type} param1 description of param1.
      * @returns {type} description of return value.
      * @api private
      */
@@ -225,7 +233,7 @@ class McodeTemplate
     /**
      * _method2() – description of private method.
      *
-     * @param1 {type} description of param1.
+     * @param {type} param1 description of param1.
      * @returns {type} description of return value.
      * @api private
      */
@@ -257,4 +265,4 @@ class Extended extends McodeTemplate
     }
 }
 
-// end of McodeTemplate.js
+// end of mcodeTemplate.js
