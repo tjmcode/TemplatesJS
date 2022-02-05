@@ -27,7 +27,7 @@ PS D:\MicroCODE\Coding\JavaScript Templates> copy mcodeTemplate.js NewClassName.
 
 * In the files make the same subsitution...
 
-![MicroCODE Symbol][image_ref1]
+![Copying Template][image_ref1]
 
 * Make all appropriate authorship, date and time changes to the header.
 * Document the purpose of the Class.
@@ -39,7 +39,7 @@ PS D:\MicroCODE\Coding\JavaScript Templates> copy mcodeTemplate.js NewClassName.
 
 * e.g.: If your Class has no GENERATORs or PRIVATE METHODs the sections remain for future reference...
 
-![MicroCODE Symbol][image_ref2]
+![Maintaining Structure][image_ref2]
 
 
 ## Help
