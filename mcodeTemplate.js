@@ -1,8 +1,10 @@
+// #region  H E A D E R
 // <copyright file="mcodeTemplate.js" company="MicroCODE Incorporated">Copyright © 2022 MicroCODE Incorporated Troy, MI</copyright><author>Timothy J. McGuire</author>
-
+// #region  P R E A M B L E
+// #region  D O C U M E N T A T I O N
 /*
  *      Title:    MicroCODE Common JavaScript Class Template
- *      Module:   Modules (MicroCODE:McodeTemplate.js)
+ *      Module:   Modules (MicroCODE:mcodeTemplate.js)
  *      Project:  MicroCODE Common Library
  *      Customer: Internal
  *      Creator:  MicroCODE Incorporated
@@ -40,11 +42,16 @@
  *      4. MDN Web Docs - JavaScript Classes
  *         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  *
- *      4. MicroCODE MCX-S02 (Internal JS Style Guide).docx
+ *      5. JSDoc - How to properly document JavaScript Code.
+ *         https://
+ *
+ *      1. MicroCODE JavaScript Style Guide
+ *         Local File: MCX-S02 (Internal JS Style Guide).docx
+ *         https://github.com/MicroCODEIncorporated/JavaScriptSG
  *
  *
- *      VIDEOS:
- *      -------
+ *      DEMONSTRATION VIDEOS:
+ *      --------------------
  *
  *      1. ...
  *
@@ -56,25 +63,47 @@
  *  Date:         By-Group:   Rev:     Description:
  *
  *  02-Feb-2022   TJM-MCODE  {0001}    New module for common reusable Javascript Classes for code files.
- *
+ *  06-Feb-2022   TJM-MCODE  {0002}    Moved @api tag under method description and before @param and @return.
+ *  08-Feb-2022   TJM-MCODE  {0003}    Aded @constructor, @property, @class, @enum,
  *
  *
  */
 "use strict";
 
-class McodeTemplate
+// #endregion
+// #endregion
+// #endregion
+
+// #region  C L A S S
+
+/**
+ * @class mcodeTemplate Class to represent a specific...
+ *
+ */
+class mcodeTemplate
 {
-    // C O N S T A N T S
+    // #region  C O N S T A N T S
+
     static MIN_VALUE = 1;
     static MAX_VALUE = 999;
     static CLASS_TYPE = 'Example';
 
-    // P R I V A T E   F I E L D S
+    // #endregion
+
+    // #region  P R I V A T E   F I E L D S
     #property1 = 0.00;
     #property2 = '';
 
-    // C O N S T R U C T O R
-    constructor(objectName)
+    // #endregion
+
+    // #region  C O N S T R U C T O R
+
+    /**
+     * @constructor mcodeTemplate class constructor.
+     *
+     * @param {string} objectName the name of the object.
+     */
+    constructor (objectName)
     {
         this.type = CLASS_TYPE;
         this.name = objectName;
@@ -83,9 +112,12 @@ class McodeTemplate
         // ...
     }
 
-    // E N U M E R A T I O N S
+    // #endregion
+
+    // #region  E N U M E R A T I O N S
+
     /**
-     * namedEnum1 - a description of this enum, its use, and meaning.
+     * @enum namedEnum1 - a description of this enum, its use, and meaning.
      */
     static namedEnum1 = Object.freeze
         ({
@@ -98,9 +130,12 @@ class McodeTemplate
             name7: 6
         });
 
-    // P R O P E R T I E S
+    // #endregion
+
+    // #region  P R O P E R T I E S
+
     /**
-     * property1 - a description of this property, its use, and meaning.
+     * @property {type} property1 a description of this property, its use, and meaning.
      */
     get property1()
     {
@@ -112,7 +147,7 @@ class McodeTemplate
     }
 
     /**
-     * property2 - a description of this property, its use, and meaning.
+     * @property {type} property2 a description of this property, its use, and meaning.
      */
     get property2()
     {
@@ -123,7 +158,10 @@ class McodeTemplate
         this.#property2 = value;
     }
 
-    // S Y M B O L S
+    // #endregion
+
+    // #region  S Y M B O L S
+
     /**
      * iterator1 - a description of this iterator, its use, and meaning.
      */
@@ -132,14 +170,21 @@ class McodeTemplate
         // method with computed name (symbol here)
     }
 
-    // M E T H O D S – S T A T I C
+    // #endregion
+
+    // #region  M E T H O D S – S T A T I C
+
     /**
      * static1() – description of public static method, called by prototype not object.
      *             This does not operate on a specific copy of a Class object.
+     * @api public
      *
      * @param {type} param1 description of param1.
      * @returns {type} description of return value.
-     * @api public
+     *
+     * @example
+     *
+     *      static1('param1');
      */
     static static1(param1)
     {
@@ -148,13 +193,22 @@ class McodeTemplate
         return value;
     }
 
-    // M E T H O D S – P U B L I C
+    // #endregion
+
+    // #region  M E T H O D S – P U B L I C
+
     /**
      * method1() – description of public method.
      *
+     * @api public
+     *
      * @param {type} param1 1st method parameter.
      * @returns method result.
-     * @api public
+     *
+     * @example
+     *
+     *      method1('param1');
+     *
      */
     method1(param1)
     {
@@ -166,10 +220,15 @@ class McodeTemplate
     /**
      * method2() – description of public method.
      *
+     * @api public
+     *
      * @param {type} param1 1st method parameter.
      * @param {type} param2 2nd method parameter.
      * @returns method result.
-     * @api public
+     *
+     * @example
+     *
+     *      method2('param1', 'param2');
      */
     method2(param1, param2)
     {
@@ -179,13 +238,18 @@ class McodeTemplate
     }
 
     /**
-     * method2() – description of public method.
+     * method3() – description of public method.
+     *
+     * @api public
      *
      * @param {type} param1 1st method parameter.
      * @param {type} param2 2nd method parameter.
      * @param {type} param3 3rd method parameter.
-     * @returns method result.
-     * @api public
+     * @returns {type} method result.
+     *
+     * @example
+     *
+     *      method3('param1', 'param2');
      */
     method3(param1, param2, param3)
     {
@@ -194,7 +258,10 @@ class McodeTemplate
         return value;
     }
 
-    // M E T H O D S - G E N E R A T O R S
+    // #endregion
+
+    // #region  M E T H O D S - G E N E R A T O R S
+
     /**
      * getValue() - returns all values in 'enums'.
      *
@@ -207,21 +274,17 @@ class McodeTemplate
         }
     }
 
-    // M E T H O D S – P R I V A T E
-    /**
-     * _method1() – description of private method.
-     *
-     * @param {type} param1 description of param1.
-     * @returns {type} description of return value.
-     * @api private
-     */
+    // #endregion
+
+    // #region  M E T H O D S – P R I V A T E
 
     /**
-     * _method1() – description of private method.
+     * _method1() – description of private method.    NOTE: Method headers are *optional* are private meothds.
+     *
+     * @api private
      *
      * @param {type} param1 description of param1.
      * @returns {type} description of return value.
-     * @api private
      */
     _method1(param1)
     {
@@ -233,9 +296,10 @@ class McodeTemplate
     /**
      * _method2() – description of private method.
      *
+     * @api private
+     *
      * @param {type} param1 description of param1.
      * @returns {type} description of return value.
-     * @api private
      */
     _method2(param1)
     {
@@ -243,26 +307,43 @@ class McodeTemplate
 
         return value;
     }
+
+    // #endregion
 }
 
-// E X T E N D E D   C L A S S E S
-class Extended extends McodeTemplate
+module.exports = mcodeTemplate.static1;
+
+// #endregion
+
+// #region  E X T E N D E D   C L A S S E S
+
+/**
+ * @class mcodeExtended Class extending mcodeTemplate...
+ *
+ */
+class mcodeExtended extends mcodeTemplate
 {
-    // C O N S T R U C T O R
-    constructor(name)
+    // #region  C O N S T R U C T O R
+
+    constructor (name)
     {
         super(name); // call the super class constructor and pass in the name parameter
     }
 
-    // M E T H O D S – P U B L I C
+    // #endregion
+
+    // #region  M E T H O D S – P U B L I C
+
     /**
      * method9() -- ouptuts the extended name of the Class.
      *
      */
     method9()
     {
-        console.log(`${this.name} communicates.`);
+        console.log(`${ this.name } communicates.`);
     }
+
+    // #endregion
 }
 
-// end of mcodeTemplate.js
+// #endregion
