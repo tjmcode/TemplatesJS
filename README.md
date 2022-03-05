@@ -1,4 +1,4 @@
-# JaveScript Class Template
+# JavaScript Class Template
 
 A Javascript (.JS) files used to start every new Class.
 
@@ -27,7 +27,7 @@ PS D:\MicroCODE\Coding\JavaScript Templates> copy mcodeTemplate.js NewClassName.
 
 * In the files make the same subsitution...
 
-![Copying Template][image_ref1]
+<p align="left"><img src=".\images\RenameInTemplate.png" width="1024" title="Renaming template text..."></p>
 
 * Make all appropriate authorship, date and time changes to the header.
 * Document the purpose of the Class.
@@ -35,11 +35,9 @@ PS D:\MicroCODE\Coding\JavaScript Templates> copy mcodeTemplate.js NewClassName.
 * Code your Class within the the guidelines of the template.
 * Create documentation for all Methods, Functions, Objects that follows the pattern illustrated in the template.
 * REMOVE all unneeded example code.
-* LEAVE the code and data ordering comments.
+* LEAVE the code and data ordering comments. e.g.: If your Class has no GENERATORs or PRIVATE METHODs the sections remain for future reference...
 
-* e.g.: If your Class has no GENERATORs or PRIVATE METHODs the sections remain for future reference...
-
-![Maintaining Structure][image_ref2]
+<p align="left"><img src=".\images\LeaveOrganization.png" width="1024" title="Maintaining Template Structure..."></p>
 
 
 ## Help
