@@ -45,7 +45,7 @@
  *      5. JSDoc - How to properly document JavaScript Code.
  *         https://
  *
- *      1. MicroCODE JavaScript Style Guide
+ *      6. MicroCODE JavaScript Style Guide
  *         Local File: MCX-S02 (Internal JS Style Guide).docx
  *         https://github.com/MicroCODEIncorporated/JavaScriptSG
  *
