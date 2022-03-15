@@ -4,7 +4,7 @@
 // #region  D O C U M E N T A T I O N
 /*
  *      Title:    MicroCODE Common Jest Test Template
- *      Module:   Modules (MicroCODE:mcodeTemplate.test.js)
+ *      Module:   Modules (./mcodeTemplate.test.js)
  *      Project:  MicroCODE Common Library
  *      Customer: Internal
  *      Creator:  MicroCODE Incorporated

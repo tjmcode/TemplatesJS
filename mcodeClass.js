@@ -4,7 +4,7 @@
 // #region  D O C U M E N T A T I O N
 /*
  *      Title:    MicroCODE Common JavaScript Class Template
- *      Module:   Modules (MicroCODE:mcodeClass.js)
+ *      Module:   Modules (./mcodeClass.js)
  *      Project:  MicroCODE Common Library
  *      Customer: Internal
  *      Creator:  MicroCODE Incorporated
