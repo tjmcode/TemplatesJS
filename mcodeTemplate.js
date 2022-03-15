@@ -205,5 +205,14 @@ function _method2(param1)
 
 // #endregion
 
+// #region  M E T H O D - E X P O R T S
+
+if (typeof module !== 'undefined')
+{
+    module.exports = { method1, method2, method3 };
+}
+
+// #endregion
+
 // #endregion
 // #endregion
