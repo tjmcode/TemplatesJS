@@ -1,10 +1,10 @@
 // #region  H E A D E R
-// <copyright file="mcodeClass.js" company="MicroCODE Incorporated">Copyright © 2022 MicroCODE Incorporated Troy, MI</copyright><author>Timothy J. McGuire</author>
+// <copyright file="classTemplate.js" company="MicroCODE Incorporated">Copyright © 2022 MicroCODE Incorporated Troy, MI</copyright><author>Timothy J. McGuire</author>
 // #region  P R E A M B L E
 // #region  D O C U M E N T A T I O N
 /*
  *      Title:    MicroCODE Common JavaScript Class Template
- *      Module:   Modules (./mcodeClass.js)
+ *      Module:   Modules (./classTemplate.js)
  *      Project:  MicroCODE Common Library
  *      Customer: Internal
  *      Creator:  MicroCODE Incorporated
@@ -64,7 +64,8 @@
  *
  *  02-Feb-2022   TJM-MCODE  {0001}    New module for common reusable Javascript Classes for code files.
  *  06-Feb-2022   TJM-MCODE  {0002}    Moved @api tag under method description and before @param and @return.
- *  08-Feb-2022   TJM-MCODE  {0003}    Aded @constructor, @property, @class, @enum,
+ *  08-Feb-2022   TJM-MCODE  {0003}    Aded @constructor, @property, @class, @enum
+ *  09-Apr-2022   TJM-MCODE  {0004}    Renamed to "classTemplate.js"
  *
  *
  */
@@ -77,10 +78,10 @@
 // #region  C L A S S
 
 /**
- * @class mcodeClass Class to represent a specific...
+ * @class classTemplate Class to represent a specific...
  *
  */
-class mcodeClass
+class classTemplate
 {
     // #region  C O N S T A N T S
 
@@ -99,7 +100,7 @@ class mcodeClass
     // #region  C O N S T R U C T O R
 
     /**
-     * @constructor mcodeClass class constructor.
+     * @constructor classTemplate class constructor.
      *
      * @param {string} objectName the name of the object.
      */
@@ -311,17 +312,17 @@ class mcodeClass
     // #endregion
 }
 
-module.exports = mcodeClass.static1;
+module.exports = classTemplate.static1;
 
 // #endregion
 
 // #region  E X T E N D E D   C L A S S E S
 
 /**
- * @class mcodeExtended Class extending mcodeClass...
+ * @class mcodeExtended Class extending classTemplate...
  *
  */
-class mcodeExtended extends mcodeClass
+class mcodeExtended extends classTemplate
 {
     // #region  C O N S T R U C T O R
 
