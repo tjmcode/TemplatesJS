@@ -63,7 +63,7 @@
  *  Date:         By-Group:   Rev:     Description:
  *
  *  07-Mar-2022   TJM-MCODE  {0001}    New module for common reusable Javascript files for web pages.
- *  09-Apr-2022   TJM-MCODE  {0004}    Renamed to "moduleTemplate.js"
+ *  09-Apr-2022   TJM-MCODE  {0002}    Renamed to "moduleTemplate.js"
  *
  *
  */
@@ -210,7 +210,7 @@ function _method2(param1)
 
 if (typeof module !== 'undefined')
 {
-    module.exports = { method1, method2, method3 };
+    module.exports = {method1, method2, method3};
 }
 
 // #endregion
