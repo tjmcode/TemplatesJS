@@ -74,7 +74,7 @@
 // #endregion
 
 // #region  J A V A S C R I P T
-// #region  F U N C T I O N S
+// #region  C O D E   F O L D I N G
 
 // #region  C O N S T A N T S
 
