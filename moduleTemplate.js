@@ -112,17 +112,30 @@ const namedEnum1 = Object.freeze
 // #region  M E T H O D S – P U B L I C
 
 /**
- * method1() – description of public method.
+ * @function method1
+ * @memberof app.layer.yourModuleName
+ * @public
+ * @description
+ * method1() - Brief description of the function's purpose, similar to how the MagicSignin function is described.
+ * Elaborate on how the function operates, any specific algorithms or methodologies it employs, and its role within its module or the application as a whole.
  *
- * @api public
+ * #### Features:
+ * - List the key features or operations performed by this function, similar to the bullet points for MagicSignin.
+ * - Detail any specific conditions, edge cases, or important behaviors that are relevant to understanding what the function does and how it does it.
  *
- * @param {type} param1 1st method parameter.
- * @returns method result.
+ * #### Behavior:
+ * - Describe how the function behaves under various conditions or inputs.
+ * - Mention any significant side effects, state changes, or external interactions (e.g., API calls, database transactions).
+ * - Explain how the function interacts with other parts of the application or external services/resources.
+ *
+ * @param {ParamType} paramName - Brief description of the parameter and its role in the function.
+ * @param {...} [optionalParam] - Description of an optional parameter, including default behavior if not provided.
+ *
+ * @returns {ReturnType} Brief description of what the function returns and under what conditions.
  *
  * @example
  *
  *      method1('param1');
- *
  */
 function method1(param1)
 {
@@ -131,41 +144,35 @@ function method1(param1)
     return value;
 }
 
+
 /**
- * method2() – description of public method.
+ * @function method2
+ * @memberof app.layer.yourModuleName
+ * @public
+ * @description
+ * method2() - Brief description of the function's purpose, similar to how the MagicSignin function is described.
+ * Elaborate on how the function operates, any specific algorithms or methodologies it employs, and its role within its module or the application as a whole.
  *
- * @api public
+ * #### Features:
+ * - List the key features or operations performed by this function, similar to the bullet points for MagicSignin.
+ * - Detail any specific conditions, edge cases, or important behaviors that are relevant to understanding what the function does and how it does it.
  *
- * @param {type} param1 1st method parameter.
- * @param {type} param2 2nd method parameter.
- * @returns method result.
+ * #### Behavior:
+ * - Describe how the function behaves under various conditions or inputs.
+ * - Mention any significant side effects, state changes, or external interactions (e.g., API calls, database transactions).
+ * - Explain how the function interacts with other parts of the application or external services/resources.
+ *
+ * @param {ParamType} param1 - Brief description of the parameter and its role in the function.
+ * @param {ParamType} param2 - Brief description of the parameter and its role in the function.
+ * @param {...} [optionalParam] - Description of an optional parameter, including default behavior if not provided.
+ *
+ * @returns {ReturnType} Brief description of what the function returns and under what conditions.
  *
  * @example
  *
- *      method2('param1', 'param2');
+ *      method1('param1', 'param2');
  */
 function method2(param1, param2)
-{
-    // ...
-
-    return value;
-}
-
-/**
- * method3() – description of public method.
- *
- * @api public
- *
- * @param {type} param1 1st method parameter.
- * @param {type} param2 2nd method parameter.
- * @param {type} param3 3rd method parameter.
- * @returns {type} method result.
- *
- * @example
- *
- *      method3('param1', 'param2');
- */
-function method3(param1, param2, param3)
 {
     // ...
 
